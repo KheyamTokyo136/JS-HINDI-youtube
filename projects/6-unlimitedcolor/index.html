@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Number Guessing Game</title>
+   
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212121;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* ===== Navbar ===== */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 16px 24px;
+  background-color: #212121;
+  height: 60px;
+  background-color: grey;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+nav a[aria-current="page"] {
+  background-color: #555;
+}
+.button{
+    padding: 10px;
+}
+#start{
+    margin-left: 40%;
+}
+    </style>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <nav>
+      <a href="../index.html" aria-current="page">Home</a>
+      <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
+        >Youtube channel</a
+      >
+    </nav>
+
+    <h1>Start should change the Background color every second</h1><br>
+    <button class="button" id="start">Start</button>
+    <button class="button" id="stop">Stop</button>
+    <script src="unlimitedcolors.js"></script>
+  </body>
+</html>
