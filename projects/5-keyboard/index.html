@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Event KeyCodes</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212121;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* ===== Navbar ===== */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 16px 24px;
+  background-color: #212121;
+  height: 60px;
+  background-color: grey;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+nav a[aria-current="page"] {
+  background-color: #555;
+}
+      table,
+      th,
+      td {
+        border: 1px solid #e7e7e7;
+      }
+      .project {
+        background-color: #1c1c1c;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+      }
+
+      .color {
+        color: aliceblue;
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html" aria-current="page">Home</a>
+      <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
+        >Youtube channel</a
+      >
+    </nav>
+    <div class="project">
+      <div id="insert">
+        <div class="key">Press the key and watch magic</div>
+      </div>
+    </div>
+
+    <script src="keyboard.js"></script>
+  </body>
+</html>
